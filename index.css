@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white; /* Text color */
+    background-color: black; /* Background color */
+    margin: 0; /* Remove default margin */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+}
+
+#title {
+    text-align: center; /* Center text */
+    margin: 20px 0; /* Margin around title */
+}
+
+#instructions {
+    text-align: center; /* Center instructions */
+    margin: 20px 0; /* Margin around instructions */
+}
+
+#control {
+    display: flex;
+    justify-content: center; /* Center buttons in control */
+    gap: 20px; /* Space between buttons */
+}
+
+.shape-button {
+    font-size: 20px; /* Font size for shape buttons */
+    padding: 10px 20px; /* Padding for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.dropdown {
+    position: relative; /* Position relative for dropdown */
+    display: inline-block; /* Inline block to allow dropdown */
+}
+
+.dropdown-button {
+    font-size: 20px; /* Font size for dropdown button */
+    padding: 10px 20px; /* Padding for button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute; /* Absolute position for dropdown */
+    background-color: white; /* Dropdown background color */
+    min-width: 160px; /* Minimum width */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for dropdown */
+    z-index: 1; /* Stack above other content */
+}
+
+.dropdown-content a {
+    color: black; /* Link color */
+    padding: 12px 16px; /* Padding for links */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Block display for links */
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd; /* Background on hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
+#boundary {
+    display: flex;
+    align-items: center; /* Center shapes vertically */
+    justify-content: center; /* Center shapes horizontally */
+    width: 1400px; /* Boundary width */
+    height: 700px; /* Boundary height */
+    border-radius: 20px; /* Rounded corners */
+    border: 3px solid red; /* Border color */
+    background-color: transparent; /* Transparent background */
+    position: relative; /* Allow absolute positioning of shapes */
+}
+
+.shape {
+    position: absolute; /* Position shapes absolutely within the boundary */
+    display: block; /* Show all shapes by default */
+}
+
+#square {
+    background-color: red; /* Square color */
+    width: 50px; /* Square width */
+    height: 50px; /* Square height */
+    top: 20%; /* Position from the top */
+    left: 10%; /* Position from the left */
+}
+
+#circle {
+    background-color: blue; /* Circle color */
+    border-radius: 50%; /* Make it circular */
+    width: 50px; /* Circle width */
+    height: 50px; /* Circle height */
+    top: 40%; /* Position from the top */
+    left: 60%; /* Position from the left */
+}
+
+#triangle {
+    border-left: 25px solid transparent; /* Left transparent border for triangle */
+    border-right: 25px solid transparent; /* Right transparent border for triangle */
+    border-bottom: 50px solid green; /* Bottom color of triangle */
+    width: 0; /* No width */
+    height: 0; /* No height */
+    position: absolute; /* Position triangle absolutely */
+    top: 70%; /* Position from the top */
+    left: 30%; /* Position from the left */
+}

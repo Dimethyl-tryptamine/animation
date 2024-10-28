@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Animation Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Animation Project</h1>
+    </header>
+
+    <p id="instructions">
+        Try pressing the buttons to explore the predetermined paths. 
+        You can also use the dropdown menu to make the shape change while 
+        it follows the path.
+    </p>
+
+    <div id="control">
+        <button id="square-button">Square</button>
+        <button id="circle-button">Circle</button>
+        <button id="triangle-button">Triangle</button>
+
+        <div class="dropdown">
+            <button id="dropdown-button" class="dropdown-button">Morph to :</button>
+            <div class="dropdown-content">
+                <a href="#" onclick="selectOption(this)">Square</a>
+                <a href="#" onclick="selectOption(this)">Circle</a>
+                <a href="#" onclick="selectOption(this)">Triangle</a>
+                <a href="#" onclick="selectOption(this)">None</a>
+                <a href="#" onclick="selectOption(this)">All</a>
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="boundary">
+        <div id="square" class="shape"></div>
+        <div id="circle" class="shape"></div>
+        <div id="triangle" class="shape"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
