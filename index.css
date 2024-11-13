@@ -1,3 +1,7 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -11,7 +15,7 @@ body {
 
 #title {
     text-align: center; /* Center text */
-    margin: 20px 0; /* Margin around title */
+    margin: 2px 0; /* Margin around title */
 }
 
 #instructions {
@@ -21,13 +25,24 @@ body {
 
 #control {
     display: flex;
+    width: 50vw;
     justify-content: center; /* Center buttons in control */
-    gap: 20px; /* Space between buttons */
+    justify-content: space-between; /* Center buttons in control */
 }
 
+button{
+    background-color: #8807eb;
+    width: 20vw;
+    border-radius: 5px;
+    border: 0;
+}
+
+button:hover{
+    background-color: red;
+}
 .shape-button {
-    font-size: 20px; /* Font size for shape buttons */
-    padding: 10px 20px; /* Padding for buttons */
+    
+    padding: 10px; /* Padding for buttons */
     cursor: pointer; /* Pointer cursor on hover */
 }
 
@@ -37,7 +52,7 @@ body {
 }
 
 .dropdown-button {
-    font-size: 20px; /* Font size for dropdown button */
+    
     padding: 10px 20px; /* Padding for button */
     cursor: pointer; /* Pointer cursor on hover */
 }
@@ -69,8 +84,8 @@ body {
     display: flex;
     align-items: center; /* Center shapes vertically */
     justify-content: center; /* Center shapes horizontally */
-    width: 1400px; /* Boundary width */
-    height: 700px; /* Boundary height */
+    width: 50vw; /* Boundary width */
+    height: 50vh; /* Boundary height */
     border-radius: 20px; /* Rounded corners */
     border: 3px solid red; /* Border color */
     background-color: transparent; /* Transparent background */
