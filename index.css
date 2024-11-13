@@ -124,3 +124,188 @@ button:hover{
     top: 70%; /* Position from the top */
     left: 30%; /* Position from the left */
 }
+
+/* Define the keyframe animation for rotating */
+@keyframes rotate-animation {
+    0% {
+        transform: rotate(0deg); /* Start at 0 degrees */
+        background-color: rgb(255, 255, 255); /* Initial background color */
+        color: rgb(0, 0, 0); /* Initial text color */
+    }
+    50% {
+        background-color: black; /* Midpoint background color */
+        color: white; /* Midpoint text color */
+    }
+    100% {
+        transform: rotate(-360deg); /* Full rotation */
+        background-color: rgb(255, 255, 255); /* Final background color */
+        color: rgb(0, 0, 0); /* Final text color */
+    }
+}
+
+/* Apply base styling to the element */
+#extra-shape-1 {
+    position: absolute;
+    left: 10%;  /* Aligns the element to the left edge */
+    top: 20%;   /* Aligns the element to the top edge */
+    width: 150px;
+    height: 100px;
+    border: 5px solid rgb(9, 255, 0);
+    border-radius: 10px;
+    background-color: white; /* Initial background color */
+    color: black; /* Initial text color */
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate-animation 2s linear infinite; /* Rotation animation with 2-second duration */
+    animation-play-state: paused; /* Pause animation by default */
+    
+}
+
+/* When hovering, the animation starts */
+#extra-shape-1:hover {
+    animation-play-state: running; /* Start the rotation animation when hovered */
+}
+
+
+@keyframes rotate-animation-reversed {
+    0% {
+        transform: rotate(0deg); /* Start at 0 degrees */
+        background-color: rgb(255, 0, 0); /* Initial background color */
+        color: rgb(0, 0, 0); /* Initial text color */
+    }
+    50% {
+        background-color: rgb(47, 0, 255); /* Midpoint background color */
+        color: white; /* Midpoint text color */
+    }
+    100% {
+        transform: rotate(360deg); /* Full rotation */
+        background-color: rgb(255, 0, 0); /* Final background color */
+        color: rgb(0, 0, 0); /* Final text color */
+    }
+}
+
+
+
+
+
+
+
+#extra-shape-2 {
+    position: absolute;
+    right: 10%;  /* Aligns the element to the left edge */
+    top: 20%;   /* Aligns the element to the top edge */
+    width: 150px;
+    height: 100px;
+    border: 5px solid rgb(255, 0, 225);
+    border-radius: 10px;
+    background-color: rgb(255, 0, 0); /* Initial background color */
+    color: rgb(0, 0, 0); /* Initial text color */
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate-animation-reversed 2s linear infinite; /* Rotation animation with 2-second duration */
+    animation-play-state: paused; /* Pause animation by default */
+
+
+
+}
+
+#extra-shape-2:hover {
+    animation-play-state: running;
+
+
+    
+}
+
+
+@keyframes up-down-left-right-animation {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    16% {
+        transform: translateY(-50px); /* Move 10px up */
+    }
+    33% {
+        transform: translateY(50px); /* Move 10px down */
+    }
+    49% {
+        transform: translateX(-50px); /* Move 10px left */
+    }
+    65% {
+        transform: translateX(50px); /* Move 10px right */
+    }
+    100% {
+        transform: translate(0px, 0px); /* Return to original position */
+    }
+}
+
+
+
+
+
+#extra-shape-3 {
+    position: absolute;
+    left: 10%; /* Aligns the element to the right edge */
+    bottom: 40%;   /* Aligns the element to the top edge */
+    width: 150px;
+    height: 100px;
+    border: 5px solid rgb(0, 255, 247);
+    border-radius: 10px;
+    background-color: rgb(217, 255, 0); /* Initial background color */
+    color: rgb(0, 0, 0); /* Initial text color */
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: up-down-left-right-animation 2s forwards;
+    animation-play-state: paused; /* Start paused */
+}
+
+@keyframes reversed-up-down-left-right-animation {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    16% {
+        transform: translateY(50px); /* Move 10px up */
+    }
+    33% {
+        transform: translateY(-50px); /* Move 10px down */
+    }
+    49% {
+        transform: translateX(50px); /* Move 10px left */
+    }
+    65% {
+        transform: translateX(-50px); /* Move 10px right */
+    }
+    100% {
+        transform: translate(0px, 0px); /* Return to original position */
+    }
+}
+
+
+#extra-shape-4 {
+    position: absolute;
+    right: 10%; /* Aligns the element to the right edge */
+    bottom: 40%;   /* Aligns the element to the top edge */
+    width: 150px;
+    height: 100px;
+    border: 5px solid rgb(246, 255, 0);
+    border-radius: 10px;
+    background-color: rgb(255, 0, 208); /* Initial background color */
+    color: rgb(0, 0, 0); /* Initial text color */
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: reversed-up-down-left-right-animation 2s forwards;
+    animation-play-state: paused; /* Start paused */
+    
+}
+
+
+
